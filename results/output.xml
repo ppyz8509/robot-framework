@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.0 on win32)" generated="2024-06-26T09:59:11.964423" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot" source="c:\Users\HP-NPRU\Desktop\robot">
+<suite id="s1-s1" name="Google Search V1" source="c:\Users\HP-NPRU\Desktop\robot\google_search_v1.robot">
+<test id="s1-s1-t1" name="Search Google" line="6">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-26T09:59:12.109919" level="INFO">Opening browser 'chrome' to base url 'http://localhost:5173/'.</msg>
+<arg>http://localhost:5173/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-26T09:59:12.109919" elapsed="1.434892"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-26T09:59:13.545816" level="INFO">Clicking element '//*[@id="root"]/div/div[2]/div[2]/div[1]/figure/svg/path'.</msg>
+<msg time="2024-06-26T09:59:13.680692" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-26T09:59:13.680692" level="FAIL">Element with locator '//*[@id="root"]/div/div[2]/div[2]/div[1]/figure/svg/path' not found.</msg>
+<arg>//*[@id="root"]/div/div[2]/div[2]/div[1]/figure/svg/path</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-26T09:59:13.545816" elapsed="0.146974">Element with locator '//*[@id="root"]/div/div[2]/div[2]/div[1]/figure/svg/path' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div[2]/div[2]/div/div[3]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-26T09:59:13.693672" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-06-26T09:59:12.109919" elapsed="1.583753">Element with locator '//*[@id="root"]/div/div[2]/div[2]/div[1]/figure/svg/path' not found.</status>
+</test>
+<status status="FAIL" start="2024-06-26T09:59:12.011391" elapsed="1.682281"/>
+</suite>
+<status status="FAIL" start="2024-06-26T09:59:11.997829" elapsed="1.695843"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Robot">Robot</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Google Search V1">Robot.Google Search V1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
